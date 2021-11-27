@@ -2,6 +2,7 @@
   "name": "expenses-project",
   "version": "0.0.1",
   "private": true,
+  "homepage": "https://grety22.github.io/expenses-app-v1",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.2.2",

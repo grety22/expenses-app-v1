@@ -9,11 +9,18 @@ export default function Expenses(props) {
     const [filteredYear, setFilteredYear] = useState('2021');
 
     const items = props.items;
-    const allExpenses = items.map((item) =>
+
+    const filteredExpenses = items.filter(expense => {
+        return expense.date.getFullYear().toString() === filteredYear;
+    });
+
+    const allExpenses = filteredExpenses.map((item) =>
         <ExpenseItem title={item.title} amount={item.amount} date={item.date} key={item.id}/>
     );
-    const filterChangeHandler = selectedYear => {
+
+    const filterChangeHandler = (selectedYear) => {
         setFilteredYear(selectedYear);
+        console.log('este es el year: '+selectedYear);
     }; 
 
     return (

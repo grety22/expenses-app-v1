@@ -41,7 +41,7 @@ function App() {
   // JSX alternative :
   return (
     <div>
-      <h2>Expenses App</h2>
+      <h2 className='app-h2'>Expenses App</h2>
       <NewExpense onAddExpense={addExpenseHandler} />
       <Expenses items={expenses} />
     </div>

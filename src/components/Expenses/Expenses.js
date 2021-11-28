@@ -20,13 +20,12 @@ export default function Expenses(props) {
 
     const filterChangeHandler = (selectedYear) => {
         setFilteredYear(selectedYear);
-        console.log('este es el year: '+selectedYear);
     }; 
 
     return (
         <Card className="expenses">
             <ExpensesFilter selected={filteredYear} onChangeFilter={filterChangeHandler} />
-            {allExpenses}
+            {filteredExpenses.length === 0 ? <p className='no-expenses-found'>No expenses found</p> : allExpenses}
         </Card>
     );
 }

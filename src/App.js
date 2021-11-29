@@ -41,6 +41,10 @@ function App() {
     });  
   }
 
+  const dataPoints = [
+
+  ]
+
   // JSX alternative :
   return (
     <div>

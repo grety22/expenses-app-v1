@@ -2,9 +2,11 @@ import React, { useState } from 'react';
 
 import ExpensesFilter from './ExpensesFilter';
 import ExpensesList from './ExpensesList';
+import ExpenseChart from './ExpensesChart';
 
 import Card from '../UI/Card';
 import './Expenses.css';
+import ExpensesChart from './ExpensesChart';
 
 export default function Expenses(props) {
     const [filteredYear, setFilteredYear] = useState('2021');
@@ -22,6 +24,7 @@ export default function Expenses(props) {
     return (
         <Card className="expenses">
             <ExpensesFilter selected={filteredYear} onChangeFilter={filterChangeHandler} />
+            <ExpensesChart />
             <ExpensesList items={filteredExpenses} />
             {/* {filteredExpenses.length === 0 ? <p className='no-expenses-found'>No expenses found</p> : allExpenses} */}
             {/* another useful way : */}

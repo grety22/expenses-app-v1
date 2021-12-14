@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/expenses-app-v1/static/css/main.53e02ad2.chunk.css",
-    "main.js": "/expenses-app-v1/static/js/main.29b6a132.chunk.js",
-    "main.js.map": "/expenses-app-v1/static/js/main.29b6a132.chunk.js.map",
+    "main.css": "/expenses-app-v1/static/css/main.c1efa9f2.chunk.css",
+    "main.js": "/expenses-app-v1/static/js/main.1646ba36.chunk.js",
+    "main.js.map": "/expenses-app-v1/static/js/main.1646ba36.chunk.js.map",
     "runtime-main.js": "/expenses-app-v1/static/js/runtime-main.975324ce.js",
     "runtime-main.js.map": "/expenses-app-v1/static/js/runtime-main.975324ce.js.map",
-    "static/js/2.0edf8f94.chunk.js": "/expenses-app-v1/static/js/2.0edf8f94.chunk.js",
-    "static/js/2.0edf8f94.chunk.js.map": "/expenses-app-v1/static/js/2.0edf8f94.chunk.js.map",
+    "static/js/2.4405a83a.chunk.js": "/expenses-app-v1/static/js/2.4405a83a.chunk.js",
+    "static/js/2.4405a83a.chunk.js.map": "/expenses-app-v1/static/js/2.4405a83a.chunk.js.map",
     "index.html": "/expenses-app-v1/index.html",
-    "static/css/main.53e02ad2.chunk.css.map": "/expenses-app-v1/static/css/main.53e02ad2.chunk.css.map",
-    "static/js/2.0edf8f94.chunk.js.LICENSE.txt": "/expenses-app-v1/static/js/2.0edf8f94.chunk.js.LICENSE.txt",
+    "static/css/main.c1efa9f2.chunk.css.map": "/expenses-app-v1/static/css/main.c1efa9f2.chunk.css.map",
+    "static/js/2.4405a83a.chunk.js.LICENSE.txt": "/expenses-app-v1/static/js/2.4405a83a.chunk.js.LICENSE.txt",
     "static/media/index.css": "/expenses-app-v1/static/media/circle-scatter-haikei.bcf28670.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.975324ce.js",
-    "static/js/2.0edf8f94.chunk.js",
-    "static/css/main.53e02ad2.chunk.css",
-    "static/js/main.29b6a132.chunk.js"
+    "static/js/2.4405a83a.chunk.js",
+    "static/css/main.c1efa9f2.chunk.css",
+    "static/js/main.1646ba36.chunk.js"
   ]
 }

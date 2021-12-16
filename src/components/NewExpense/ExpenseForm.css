@@ -22,11 +22,23 @@
   
 .new-expense__actions {
   text-align: right;
-  margin: 30px auto;
-  width: 60%;
+  margin: 25px auto;
+  width: 100%;
 }
 
 .new-expense__control {
-  width: 60%;
+  width: 100%;
   margin: 10px auto;
+}
+
+@media (min-width: 500px) {
+  .new-expense__control {
+    width: 60%;
+    margin: 10px auto;
+  }
+  .new-expense__actions {
+    text-align: right;
+    margin: 30px auto;
+    width: 60%;
+  }
 }

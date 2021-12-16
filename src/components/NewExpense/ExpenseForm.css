@@ -1,24 +1,32 @@
 .new-expense__controls {
-    display: flex;
-    gap: 1rem;
-    margin-bottom: 1rem;
-    text-align: left;
-    justify-content: space-evenly;
-  }
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
   
-  .new-expense__control label {
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-    display: block;
-  }
+.new-expense__control label {
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 0.5rem;
+  display: block;
+}
   
-  .new-expense__control input {
-    font: inherit;
-    padding: 0.5rem;
-    border-radius: 6px;
-    border: 1px solid #ccc;
-  }
+.new-expense__control input {
+  font: inherit;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  height: 42px;
+  width: 100%;
+}
   
-  .new-expense__actions {
-    text-align: right;
-  }
+.new-expense__actions {
+  text-align: right;
+  margin: 30px auto;
+  width: 60%;
+}
+
+.new-expense__control {
+  width: 60%;
+  margin: 10px auto;
+}

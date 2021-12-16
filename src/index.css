@@ -1,22 +1,37 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+/* SCSS HEX */
+/* $charleston-green: #1e2528ff;
+$dark-slate-gray: #3a504bff;
+$sea-green-crayola: #0ef6beff;
+$bottle-green: #04624cff;
+$cultured: #f7f7f7ff; */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
 
 * {
   box-sizing: border-box;
 }
 
 html {
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: 'Comfortaa', cursive;
 }
 
 body {
   margin: 0;
   background-image: url(/src/assets/circle-scatter-haikei.svg);
-  background-color: #3D5A80;
+  background-color: #1E2528;
 }
 
 .app-h2 {
   text-align: center;
   color: #fefefe;
-  text-transform: uppercase;
+  font-size: 38px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.app-span {
+  color: #0EF6BE;
+  display: block;
+  margin: 6px 3px 0;
 }
 

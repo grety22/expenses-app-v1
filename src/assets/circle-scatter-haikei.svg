@@ -1,6 +1,6 @@
 <svg id="visual" viewBox="0 0 960 540" width="960" height="540" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
-    <rect x="0" y="0" width="960" height="540" fill="#293241"></rect>
-    <g fill="none" stroke="#214e69" stroke-width="2">
+    <rect x="0" y="0" width="960" height="540" fill="#1E2528"></rect>
+    <g fill="none" stroke="#0EF6BE20" stroke-width="2">
         <circle r="88" cx="941" cy="192"></circle>
         <circle r="21" cx="330" cy="110"></circle>
         <circle r="21" cx="56" cy="509"></circle>

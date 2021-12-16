@@ -26,7 +26,7 @@ export default function NewExpense(props) {
 
     return (
         <Card className="new-expense">
-            {!isEditing && <button onClick={startEditingHandler}>Add New Expense</button>}
+            {!isEditing && <button onClick={startEditingHandler}>add new expense</button>}
             {isEditing && <ExpenseForm onSaveExpenseData={saveExpenseDataHandler} onCancel={stoptEditingHandler} />}
         </Card>
     )

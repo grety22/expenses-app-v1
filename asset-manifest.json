@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/expenses-app-v1/static/css/main.10ab651f.chunk.css",
+    "main.css": "/expenses-app-v1/static/css/main.2155dbcc.chunk.css",
     "main.js": "/expenses-app-v1/static/js/main.bed58c61.chunk.js",
     "main.js.map": "/expenses-app-v1/static/js/main.bed58c61.chunk.js.map",
     "runtime-main.js": "/expenses-app-v1/static/js/runtime-main.975324ce.js",
@@ -8,14 +8,14 @@
     "static/js/2.4405a83a.chunk.js": "/expenses-app-v1/static/js/2.4405a83a.chunk.js",
     "static/js/2.4405a83a.chunk.js.map": "/expenses-app-v1/static/js/2.4405a83a.chunk.js.map",
     "index.html": "/expenses-app-v1/index.html",
-    "static/css/main.10ab651f.chunk.css.map": "/expenses-app-v1/static/css/main.10ab651f.chunk.css.map",
+    "static/css/main.2155dbcc.chunk.css.map": "/expenses-app-v1/static/css/main.2155dbcc.chunk.css.map",
     "static/js/2.4405a83a.chunk.js.LICENSE.txt": "/expenses-app-v1/static/js/2.4405a83a.chunk.js.LICENSE.txt",
     "static/media/index.css": "/expenses-app-v1/static/media/circle-scatter-haikei.f4521cf4.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.975324ce.js",
     "static/js/2.4405a83a.chunk.js",
-    "static/css/main.10ab651f.chunk.css",
+    "static/css/main.2155dbcc.chunk.css",
     "static/js/main.bed58c61.chunk.js"
   ]
 }

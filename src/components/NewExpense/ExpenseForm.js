@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './ExpenseForm.css';
 import { db } from '../../firebase-config';
-import { collection, getDocs } from 'firebase/firestore';
+import { collection, getDocs, addDoc } from 'firebase/firestore';
 
 export default function ExpenseForm(props) {
     const [enteredTitle,  setEnteredTitle]  = useState('');
@@ -9,8 +9,6 @@ export default function ExpenseForm(props) {
     const [enteredDate,   setEnteredDate]   = useState('');
 
     const expensesCollectionRef = collection(db, "expenses");
-
-
 
     // Use this for single-state approach:
     // const [userInput, setUserInput] = useState({
@@ -41,13 +39,16 @@ export default function ExpenseForm(props) {
         // });
     };
 
-    const submitHandler = (event) => {
+    const submitHandler = async (event) => {
         event.preventDefault();
         const expenseData = {
             title: enteredTitle,
             amount: +enteredAmount,
             date: new Date(enteredDate),
         };
+
+        await addDoc(expensesCollectionRef, expenseData);
+        
         console.log(expenseData);
         props.onSaveExpenseData(expenseData);
 

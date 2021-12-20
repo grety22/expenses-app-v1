@@ -33,7 +33,7 @@
 
 @media (min-width: 500px) {
   .new-expense__control {
-    width: 60%;
+    min-width: 450px;
     margin: 10px auto;
   }
   .new-expense__actions {

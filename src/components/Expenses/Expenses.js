@@ -8,12 +8,15 @@ import Card from '../UI/Card';
 import './Expenses.css';
 
 export default function Expenses(props) {
-    const [filteredYear, setFilteredYear] = useState('2020');
+    const [filteredYear, setFilteredYear] = useState('2021');
 
     const items = props.items;
 
     const filteredExpenses = items.filter(expense => {
-        return expense.date.getFullYear().toString() === filteredYear;
+        var timestamp = expense.date.seconds;
+        var date = new Date(timestamp*1000);
+        // console.log(date.getFullYear());
+        return date.getFullYear().toString() === filteredYear;
     });
 
     const filterChangeHandler = (selectedYear) => {

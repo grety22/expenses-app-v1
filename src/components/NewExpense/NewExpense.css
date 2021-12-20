@@ -7,6 +7,9 @@
   text-align: center;
   box-shadow: 0 20px 50px #1E2528;
   border: 1px solid #0EF6BE80;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
   
 .new-expense button {
@@ -20,8 +23,19 @@
   cursor: pointer;
 }
 
+.new-expense button.month-max-btn {
+  border: 2px solid #E41F7B;
+}
+
 .new-expense button[type="button"] {
   margin-right: 20px;
+}
+
+.new-expense button.month-max-btn:hover,
+.new-expense button.month-max-btn:active {
+  background-color: #E41F7B80;
+  border-color: #E41F7B;
+  color: #FFFFFF;
 }
   
 .new-expense button:hover,

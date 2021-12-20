@@ -1,10 +1,17 @@
 import React, { useState } from 'react';
 import './ExpenseForm.css';
+import { db } from '../../firebase-config';
+import { collection, getDocs } from 'firebase/firestore';
+
 export default function ExpenseForm(props) {
     const [enteredTitle,  setEnteredTitle]  = useState('');
     const [enteredAmount, setEnteredAmount] = useState('');
     const [enteredDate,   setEnteredDate]   = useState('');
-    
+
+    const expensesCollectionRef = collection(db, "expenses");
+
+
+
     // Use this for single-state approach:
     // const [userInput, setUserInput] = useState({
     //     enteredTitle: '',
@@ -67,8 +74,8 @@ export default function ExpenseForm(props) {
                 </div>
             </div>
             <div className="new-expense__actions">
-                <button type="button" onClick={props.onCancel}>Cancel</button>
-                <button type="submit">Add Expense</button>
+                <button type="button" onClick={props.onCancel}>cancel</button>
+                <button type="submit">add expense</button>
             </div>
         </form>
     )

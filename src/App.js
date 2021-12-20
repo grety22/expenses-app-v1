@@ -63,6 +63,7 @@ function App() {
       <h2 className='app-h2'>expen<span className='app-span'>$</span>es</h2>
       <NewExpense onAddExpense={addExpenseHandler} />
       <Expenses items={expenses} />
+      <span className='app-span__control-version'>v 1.0</span>
     </div>
   );
 }

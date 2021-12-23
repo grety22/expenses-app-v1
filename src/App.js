@@ -32,15 +32,13 @@ function App() {
   const expensesCollectionRef = collection(db, "expenses");
 
   useEffect(() => {
-      
     const getExpenses = async () => {
       const data = await getDocs(expensesCollectionRef);
       console.log(data);
       setExpenses(data.docs.map((doc) => ({...doc.data(), id: doc.id})));
     }
-
     getExpenses();
-  }, [])
+  }, []);
   // const [expenses, setExpenses] = useState(dummy_data_expenses);
 
   // Alternative code (old way):
@@ -63,7 +61,7 @@ function App() {
       <h2 className='app-h2'>expen<span className='app-span'>$</span>es</h2>
       <NewExpense onAddExpense={addExpenseHandler} />
       <Expenses items={expenses} />
-      <span className='app-span__control-version'>v 1.0</span>
+      <span className='app-span__control-version'>v 1.1</span>
     </div>
   );
 }

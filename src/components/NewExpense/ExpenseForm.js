@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './ExpenseForm.css';
 import { db } from '../../firebase-config';
-import { collection, getDocs, addDoc } from 'firebase/firestore';
+import { collection, addDoc, updateDoc, doc } from 'firebase/firestore';
 
 export default function ExpenseForm(props) {
     const [enteredTitle,  setEnteredTitle]  = useState('');
@@ -38,7 +38,7 @@ export default function ExpenseForm(props) {
         //     return { ...prevState, enteredDate: event.target.value };
         // });
     };
-
+    // Create Expense
     const submitHandler = async (event) => {
         event.preventDefault();
         const expenseData = {
@@ -56,6 +56,16 @@ export default function ExpenseForm(props) {
         setEnteredTitle('');
         setEnteredAmount('');
         setEnteredDate('');
+    }
+    // Update Expense 
+    const updateExpense = async (id, title, amount, date) => {
+        const expenseDoc = doc(db, "expenses", id);
+        const expenseUpdated = {
+            title: title,
+            amount: +amount,
+            date: new Date(date),
+        };
+        await updateDoc(expenseDoc, expenseUpdated);
     }
 
     return (

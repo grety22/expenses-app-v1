@@ -52,3 +52,23 @@
     color: #0EF6BE;
   }
 }
+
+.expense-item__icons {
+  background-color: #0EF6BE20;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  height: 88px;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  border-left: 1px solid #0EF6BE;
+}
+
+.fa-trash {
+  color: #F7F7F7;
+  cursor: pointer;
+}
+.fa-trash :hover {
+  color: rgb(228, 31, 123);
+}

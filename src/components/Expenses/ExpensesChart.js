@@ -17,7 +17,6 @@ const ExpensesChart = (props) => {
         {label: 'Dec', value:'0'},
     ];
 
-
     for (const expense of props.expenses) {
         var timestamp = expense.date.seconds;
         var date = new Date(timestamp*1000);

@@ -11,11 +11,11 @@ export default function ChartBar(props) {
     return (
         <div className='chart-bar'>
             <div className='chart-bar__inner' style={{
-                    borderColor: (parseFloat(props.value.substring(1)) > 15000) ? '#E41F7B80' : '#0EF6BE',
+                    borderColor: (parseFloat(props.value.substring(1)) > 1000) ? '#E41F7B80' : '#0EF6BE',
                 }}>
                 <div className='chart-bar__fill' style={{
                     height: barFillHeight, 
-                    backgroundColor: (parseFloat(props.value.substring(1)) > 15000) ? '#E41F7B' : '#0EF6BE',
+                    backgroundColor: (parseFloat(props.value.substring(1)) > 1000) ? '#E41F7B' : '#0EF6BE',
                 }}></div>
             </div>
             <div className='chart-bar__label'>{ props.label }</div>

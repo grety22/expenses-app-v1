@@ -26,8 +26,8 @@ export default function NewExpense(props) {
 
     return (
         <Card className="new-expense">
-            {!isEditing && <button className="month-max-btn">set months max</button>}
-            {!isEditing && <button onClick={startEditingHandler}>add new expense</button>}
+            {!isEditing && <button className="month-max-btn">Set Months Max</button>}
+            {!isEditing && <button onClick={startEditingHandler}>Add New Expense</button>}
             {isEditing && <ExpenseForm onSaveExpenseData={saveExpenseDataHandler} onCancel={stoptEditingHandler} />}
         </Card>
     )

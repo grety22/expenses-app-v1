@@ -57,7 +57,7 @@ export default function ExpenseForm(props) {
         setEnteredAmount('');
         setEnteredDate('');
     }
-    // Update Expense 
+    // Update Expense (NOT IN USE YET)
     const updateExpense = async (id, title, amount, date) => {
         const expenseDoc = doc(db, "expenses", id);
         const expenseUpdated = {
@@ -85,8 +85,8 @@ export default function ExpenseForm(props) {
                 </div>
             </div>
             <div className="new-expense__actions">
-                <button type="button" onClick={props.onCancel}>cancel</button>
-                <button type="submit">add expense</button>
+                <button type="button" onClick={props.onCancel}>Cancel</button>
+                <button type="submit">Add Expense</button>
             </div>
         </form>
     )

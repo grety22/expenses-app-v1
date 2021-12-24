@@ -4,4 +4,9 @@ props - props.children - create-react-app - node 17.1.0 - react 17.0.1 - react-s
 * state: *DONE* ✅(V1.0)
 
 to do future :
-- add database
+- Auto update when adding a new expense
+- Fix the Delete functionality
+- Create Modal for 'set months max' btn (Make it work)
+- Create Edit functionality
+- Add User auth 
+- Create users profiles
